@@ -1,3 +1,51 @@
-h1 {
-    color: red;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #272424;
+    padding: 0 calc(100vw / 6);
 }
+
+    .navbar .logo {
+        display: flex;
+        align-items: center;
+    }
+
+        .navbar .logo img {
+            height: 24px;
+            width: 24px;
+        }
+
+        .navbar .logo h1 {
+            margin-left: 10px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #272424;
+        }
+
+    .navbar .links {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+        .navbar .links a {
+            margin-left: 10px;
+            color: black;
+            text-decoration: none;
+        }
+
+            .navbar .links a:nth-child(4)::after {
+                content: "|";
+                margin-left: 10px;
+            }
